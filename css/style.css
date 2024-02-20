@@ -33,26 +33,29 @@ background: linear-gradient(0deg, rgba(218,218,210,1) 76%, rgba(0,149,134,1) 76%
 
 .contacts{
     display: none;
+    background-color: white;
     
     
 }
 
 .chatbox{
-    flex-grow: 1;
+   display: flex;
    background-color:#d9dad4;
-   height: 97vh;
+   flex-direction: column;
+   
 }
 
 .main-chat{
+    flex-grow: 1;
     padding: 20px;
     background-image: url('../img/mine.jpg');
-    min-height: 90%;
+    
 }
 
 
 .contact-user{
     padding: 10px;
-
+    opacity: 1;
     background-color: #e9e9e9;
     display: flex;
     justify-content: space-between;
@@ -91,6 +94,13 @@ background: linear-gradient(0deg, rgba(218,218,210,1) 76%, rgba(0,149,134,1) 76%
     font-size: 10px;
     background-color: white;
     border-radius: 10px;
+}
+
+.main-chat .chat-green,.chat-white > .chat-modal-time{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
 .writing{
@@ -158,6 +168,10 @@ background: linear-gradient(0deg, rgba(218,218,210,1) 76%, rgba(0,149,134,1) 76%
         border-bottom:1px solid #bcc0c2;
     }
 
+    .contacts ul > li .contact-user:hover{
+        opacity: 0.75;
+    }
+
     .icon,.chat-icon{
         color: #bcc0c2;
         font-size: 15px;
@@ -222,7 +236,7 @@ background: linear-gradient(0deg, rgba(218,218,210,1) 76%, rgba(0,149,134,1) 76%
 
         
         
-        width: 350px;
+        width: 250px;
 
         
         
@@ -238,6 +252,7 @@ background: linear-gradient(0deg, rgba(218,218,210,1) 76%, rgba(0,149,134,1) 76%
 
     .search{
         display: block;
+        border-bottom:1px solid #bcc0c2  ;
     }
     
     .contacts .contact-user .chat-user .contact-description,.time{
