@@ -44,7 +44,7 @@ ul,ol,menu{
 .main-chat{
     padding: 20px;
     background-image: url('../img/mine.jpg');
-    min-height: 85%;
+    min-height: 88vh;
 }
 
 
@@ -118,6 +118,10 @@ ul,ol,menu{
     
 }
 
+.writing i {
+    display: none;
+}
+
 .search{
     padding: 20px;
 }
@@ -125,6 +129,12 @@ ul,ol,menu{
 .search i {
     padding-right:10px ;
 }
+
+.chat-icon{
+    display: none;
+}
+
+
 
 @media (min-width:720px) {
    
@@ -148,6 +158,25 @@ ul,ol,menu{
         display: none;
     }
 
+    .chat-icon{
+        display: block;
+    }
+
+    .writing{
+        padding: 0 20px;
+    }
+
+    .writing > *{
+        display: inline-block;
+    }
+
+    .writing i {
+        display: inline-block;
+    }
+
+    .contacts .contact-user .chat-user .contact-description,.time{
+        display: none;
+    }
     
 }
 
@@ -158,6 +187,8 @@ ul,ol,menu{
         height: 90%;
         
     }
+
+    
 
     .contacts{
         
@@ -177,6 +208,9 @@ ul,ol,menu{
         display: block;
     }
     
+    .contacts .contact-user .chat-user .contact-description,.time{
+        display: block;
+    }
 }
 
 
