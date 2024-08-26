@@ -1,0 +1,1 @@
+Questa repo contiene l'esercizio in cui replichiamo il layout di Whatsapp che verrà ripreso successivamente in un'altro esercizio implementando le funzionalità
